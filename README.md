@@ -8,7 +8,7 @@
 docker-compose up -d
 ```
 ```
-sudo docker exec -ti projetosmplaces_app_1 bash -c "cd /var/www/html && composer install -vvv && cp .env.example .env && php artisan migrate"
+docker exec -ti exemplosmplaces_app_1 bash -c "cd /var/www/html && composer install -vvv && cp .env.example .env && php artisan migrate"
 ```
 
 ## Requisição para o projeto
