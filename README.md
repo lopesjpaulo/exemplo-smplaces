@@ -1,8 +1,8 @@
-# Instruções para executar o projeto
+# InstruÃ§Ãµes para executar o projeto
 
 ## Clonar o projeto
 
-## Rodar os comandos após o clone
+## Rodar os comandos apÃ³s o clone
 
 ```
 docker-compose up -d
@@ -11,7 +11,7 @@ docker-compose up -d
 docker exec -ti exemplosmplaces_app_1 bash -c "cd /var/www/html && composer install -vvv && cp .env.example .env && php artisan migrate"
 ```
 
-## Requisição para o projeto
+## RequisiÃ§Ã£o para o projeto
 
 Utilizando o postman ou qualquer outro aplicativo do tipo
 
@@ -36,5 +36,5 @@ Utilizando o postman ou qualquer outro aplicativo do tipo
 Executar com o PHPUnit:
 
 ```
-vendor/bin/phpunit --filter=testTransaction
+docker exec -ti exemplosmplaces_app_1 bash -c "vendor/bin/phpunit --filter=testTransaction"
 ```
