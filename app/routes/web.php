@@ -13,10 +13,6 @@
 |
 */
 
-$router->get('/', function () use ($router) {
-    return $router->app->version();
-});
-
 $router->group(['middleware' => 'app\Http\Middleware\AuthenticateAccess'], function() use ($router) {
-    $router->post('/transactions', 'TransactionController@create');
+    $router->post('transactions', 'TransactionController@create');
 });
